@@ -26,7 +26,7 @@ void Insert(struct Array *arr , int ind , int num){
     }
     arr->A[ind] = num;
     arr->length++;
-    }
+    }   
 }
 
 int main(){
