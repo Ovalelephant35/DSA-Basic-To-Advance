@@ -7,12 +7,12 @@ int *merge(int *arr1 , int *arr2 , int m , int n){
     int *p;
     p = new int[m+n];
     int i , j , k=0;
-    while(i<m || j<n){
+    while(i<m && j<n){
         if(arr1[i]<=arr2[j])p[k++] = arr1[i++];
         else p[k++] = arr2[j++];
     }
-    for( ; i<m ; i++)p[k++]=arr1[i++];
-    for( ; j<n ; j++)p[k++]=arr2[j++];
+    for( ; i<m ; i++)p[k++]=arr1[i];
+    for( ; j<n ; j++)p[k++]=arr2[j];
     return p;
 }
 int main(){
