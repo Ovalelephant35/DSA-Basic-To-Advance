@@ -3,21 +3,22 @@
 #include<math.h>
 #include<stdio.h>
 using namespace std;
+template<class T>
 class Array{
     private:
-    int *A;
+    T *A;
     int size;
     int len;
     public:
     Array(){
         size=10;
         len=0;
-        A = new int[size];
+        A = new T[size];
     }
     Array(int sz){
         size = sz;
         len =0 ;
-        A = new int[size];
+        A = new T[size];
     }
     ~Array(){
         delete []A;
@@ -27,7 +28,7 @@ class Array{
             cout<<A[i]<<" ";
         }
     }
-    void insert(int index , int num){
+    void insert(int index , T num){
         if(index>=0 && len<size && index<=len){
             int i=len-1;
             while(i>=index){
@@ -56,7 +57,7 @@ class Array{
     }
 };
 int main(){
-   Array arr(10);
+   Array<int> arr(10);
    arr.insert(0,1);
    arr.insert(1,2);
    arr.insert(2,3);
