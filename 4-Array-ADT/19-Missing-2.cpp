@@ -11,7 +11,7 @@ int randmis(int arr[] , int len){
     return -1;
 } 
 int main(){
-   int arr[9] = {4,5,6,7,9,10,11,12,13};
+   int arr[9] = {4,5,6,7,8,9,10,11,12};
    cout<<randmis(arr , 9);
 return 0;
 }
