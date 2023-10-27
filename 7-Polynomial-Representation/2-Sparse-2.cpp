@@ -30,16 +30,22 @@ class sparse{
     }
     void display(){
         int k=0;
-        for(int i=0 ; i<n ; i++){
-            for(int j=0 ; j<m ; j++){
-                
+        for(int a=0 ; a<n ; a++){
+            for(int b=0 ; b<m ; b++){
+                if(a==e[k].i && b==e[k].j){
+                    cout<<e[k++].x<<" ";
+                }
+                else cout<<0<<" ";
             }
+            cout<<endl;
         }
     }
 };
 
 
 int main(){
-   
+   sparse s(5,5,5);
+   s.read();
+   s.display();
 return 0;
 }
