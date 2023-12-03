@@ -39,7 +39,7 @@ class LinkedList{
             p=p->next;
         }
 
-    }
+    }//using recdis we can use a flag
     void insert(int index , int x){
 
     }
