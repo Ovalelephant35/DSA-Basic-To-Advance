@@ -8,6 +8,7 @@
 #include<list>
 #include<queue>
 #include<set>
+#include<map>
 using namespace std;
  
 //pairs
@@ -83,6 +84,7 @@ void queues(){
 
 }
 
+//sets
 void sets(){
     set<int> s;//everything in sorted and without duplicates 
     s.insert(5);
@@ -97,7 +99,22 @@ void sets(){
     //unordered for only unique not sorted //upperbound and lowerbound dont work
 }
 
+//mapping on the basis of key and value
 void mapping(){
+    map<int , int> m;
+    m[1] = 2;
+    cout<<m[1];
+    //multimap duplicate key is allowed with sorting
+    //unordered map no duplicate key but only randomised
+}
+
+void sorting(){
+    //there are methods to sort like the generic ones the ascending sort(a, a+n) sort(v.begin() , v.end()) greatrt<int> descending
+    //sorting in my way like using comparator
+    //sort(a , a+n  , comp)
+}
+
+bool comp(/*datatypes*/){
     
 }
 int main(){
@@ -113,5 +130,6 @@ int main(){
       cout<<endl<<endl;
       sets();
       cout<<endl<<endl;
+      mapping();
 return 0;
 }
