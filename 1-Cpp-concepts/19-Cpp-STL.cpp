@@ -51,15 +51,52 @@ void lists(){
     ls.push_front(6);
     for(auto a : ls)cout<<a<<" ";
 }
+
 //stack - last in first out
 void stacks(){
     stack<int>s;
+    s.push(5);
+    s.push(7);
+    s.pop();//latest element will be removed;
+    cout<<s.size()<<" ";
+    cout<<s.top();
+//there is empty and swap also 
+}
 
+//queue - first in first out
+void queues(){
+    queue<int>q;
+    //rest similar to stack everything
+    priority_queue<int>pq; //max heap
+    //elements remain at the top bases on descending order top to bottom a tree is maintained
+    pq.push(8);
+    pq.push(7);//logn
+    pq.push(12);
+    cout<<pq.top();//o(1)
+
+    priority_queue<int , vector<int> , greater<int> >pqr;
+    pqr.push(8);
+    pqr.push(7);
+    pqr.push(12);
+    cout<<pqr.top();
+
+}
+
+void sets(){
+    set<int> s;//everyti
 }
 int main(){
 //    pairs();
+      cout<<endl<<endl;
       vectors();
-      cout<<endl<<endl<<endl;
+      cout<<endl<<endl;
       lists();
+      cout<<endl<<endl;
+      stacks();
+      cout<<endl<<endl;
+      queues();
+      cout<<endl<<endl;
+      sets();
+      cout<<endl<<endl;
 return 0;
 }
