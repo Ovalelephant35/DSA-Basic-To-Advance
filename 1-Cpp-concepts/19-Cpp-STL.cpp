@@ -7,6 +7,7 @@
 #include<stack>
 #include<list>
 #include<queue>
+#include<set>
 using namespace std;
  
 //pairs
@@ -83,7 +84,21 @@ void queues(){
 }
 
 void sets(){
-    set<int> s;//everyti
+    set<int> s;//everything in sorted and without duplicates 
+    s.insert(5);
+    s.insert(5);
+    auto it = s.find(5);
+    cout<<*(it);
+    //erase end start 
+    //coutn 1 or 0 logn everything
+    //multiset for only sorted gives correct count
+    //imprtant erase(1)all the occurance
+    //erase(find(1))//only first one
+    //unordered for only unique not sorted //upperbound and lowerbound dont work
+}
+
+void mapping(){
+    
 }
 int main(){
 //    pairs();
