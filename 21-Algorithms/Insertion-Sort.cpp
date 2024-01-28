@@ -24,7 +24,6 @@ int main() {
     arr.push_back(8);
     arr.push_back(6);
     arr.push_back(4);
-
     insert(arr, 7);
 
     for (int i = 0; i < 7; i++)
